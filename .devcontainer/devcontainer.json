@@ -35,12 +35,14 @@
 		"source=/Users/philipz/.skaffold,target=/root/.skaffold,type=bind",
 		"source=extensions,target=/root/.vscode-server/extensions,type=volume",
 		"source=cloud-code,target=/root/.cache/cloud-code,type=volume",
+		"source=cloud-code-config,target=/root/.config,type=volume",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.m2,target=/root/.m2,type=bind"
 	],
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"vscjava.vscode-java-pack",
-		"googlecloudtools.cloudcode"
+		"googlecloudtools.cloudcode",
+		"redhat.java"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
