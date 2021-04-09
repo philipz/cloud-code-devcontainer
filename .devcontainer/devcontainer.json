@@ -27,6 +27,7 @@
 		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind",
 		"source=/Users/philipz/.kube,target=/home/vscode/.kube,type=bind",
 		"source=/Users/philipz/.skaffold,target=/home/vscode/.skaffold,type=bind",
+		"source=extensions,target=/root/.vscode-server/extensions,type=volume",
 		"source=cloud-code,target=/home/vscode/.cache/cloud-code,type=volume",
 		"source=cloud-code-config,target=/home/vscode/.config,type=volume",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.m2,target=/home/vscode/.m2,type=bind"
